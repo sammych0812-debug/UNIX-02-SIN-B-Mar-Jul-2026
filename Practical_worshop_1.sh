@@ -6,3 +6,6 @@ gpg --list-keys # listar llaves
 gpg --armor --export chamorrosamy525@gmail.com > mi_llave_publica.asc # # exporta la clave pública y la guarda en un archivo .asc
 ls mi_llave_publica.asc
 gpg --armor --export # exporta clave pública
+gpg --list-secret-keys --keyid-format=long # para listar las llaves privadas
+gpg --armor --export-secret-keys # para especificar el hash de las llaves
+# gpg --pinentry-mode loopback --armor --export-secret-keys C942833FAF2766C1  / EN MICASO NO ME VALIO  EL ANTERIOR COMANDO Y APLIQUE ESTE COMANDO PARA QUE FUNIONARA Y ME SALIERA MI LLAVE PRIVADA.
