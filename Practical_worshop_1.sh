@@ -3,3 +3,6 @@ which gpg # Nos dice en qué ruta está instalado GPG / respuesta: /usr/bin/gpg
 gpg --version # # Muestra la versión de GPG instalada / respuesta : gpg (GnuPG) 2.4.4 ....
 gpg --full-generate-key # generar clave
 gpg --list-keys # listar llaves 
+gpg --armor --export chamorrosamy525@gmail.com > mi_llave_publica.asc # # exporta la clave pública y la guarda en un archivo .asc
+ls mi_llave_publica.asc
+gpg --armor --export # exporta clave pública
